@@ -108,8 +108,8 @@ const Navbar = () => {
             </div>
             {/*  Mobile view Items */}
             {isOpen && (
-                <div className="absolute top-16 left-0.5 transform -translate-x-0.5 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-2xl">
-                    <ul className="flex felx-col items-center gap-4 py-4 text-gray-300">
+                <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
+                    <ul className="flex flex-col items-center gap-3 py-4 text-gray-300">
                         {menu.map((item) => (
                             <li
                                 key={item.id}
@@ -122,7 +122,8 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className="flex md:flex gap-3 items-center">
+                    <div class="social">
+                        <div  className="flex gap-4 justify-center">
                         <a
                             href="https://github.com/ShivamSinghSde"
                             target="blank"
@@ -147,6 +148,7 @@ const Navbar = () => {
                         >
                             <FaXTwitter size={25} />
                         </a>
+                    </div>
                     </div>
                 </div>
             )}
