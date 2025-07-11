@@ -1,4 +1,4 @@
-import { React, use, useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
