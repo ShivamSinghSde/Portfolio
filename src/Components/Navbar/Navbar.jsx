@@ -54,11 +54,11 @@ const Navbar = () => {
           {menu.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer  hover:text-[#f1bc71] ${
+              className={`hover:text-[#f1bc71] ${
                 activeSection === item.id ? "text-[#f1bc71]" : ""
               }`}
             >
-              <button onClick={() => handleMenu(item.id)}>{item.label}</button>
+              <button className="cursor-pointer" onClick={() => handleMenu(item.id)}>{item.label}</button>
             </li>
           ))}
         </ul>
@@ -110,16 +110,16 @@ const Navbar = () => {
       </div>
       {/*  Mobile view Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
-          <ul className="flex flex-col items-center gap-3 py-4 text-gray-300">
+        <div className="fixed top-16 left-1/2 transform -translate-x-1/3 w-3/5 bg-[#050414]/50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
+          <ul className="flex flex-col items-center gap-3 py-4 text-gray-300 ">
             {menu.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer  hover:text-[#f1bc71] ${
+                className={` hover:text-[#f1bc71] ${
                   activeSection === item.id ? "text-[#f1bc71]" : ""
                 }`}
               >
-                <button onClick={() => handleMenu(item.id)}>
+                <button className="cursor-pointer" onClick={() => handleMenu(item.id)}>
                   {item.label}
                 </button>
               </li>
