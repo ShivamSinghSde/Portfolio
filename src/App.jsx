@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer"
 import Navbar from "./Components/Navbar/Navbar"
 import Skills from "./Components/Skills/Skills"
 import Projects from "./Components/Projects/Projects"
+import BlurBlob from "./BlurBlob"
 
 function App() {
  
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <div className="bg-[#050512] text-white">
+        <BlurBlob position = {{top: '35%', left: '20%'}} size = {{width: '30%', height: '40%'}} />
         <div>
 
         </div>
