@@ -1,5 +1,8 @@
 import React from "react";
 import BackgroundBubbles from "../../animations/BackgroundBubbles";
+import Tilt from "react-parallax-tilt";
+
+
 import {
   FaJava,
   FaPython,
@@ -34,29 +37,38 @@ const skills = [
     ],
   },
   {
-    title: "Frontend Development",
+    title: "Frontend",
     items: [
       { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
       { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
-      { name: "JavaScript", icon: <FaJs className="text-yellow-400 sm:-ml-3 md:-ml-2 lg:-ml-4" /> },
+      {
+        name: "JavaScript",
+        icon: <FaJs className="text-yellow-400 sm:-ml-3 md:-ml-2 lg:-ml-4" />,
+      },
       { name: "React", icon: <FaReact className="text-cyan-400" /> },
       { name: "TailwindCSS", icon: <SiTailwindcss className="text-sky-400" /> },
     ],
   },
   {
-    title: "Backend Development",
-    items: [{ name: "Springboot", icon: <SiSpringboot className="text-green-600" /> }],
+    title: "Backend",
+    items: [
+      { name: "Springboot", icon: <SiSpringboot className="text-green-600" /> },
+      { name: "MySQL", icon: <SiMysql className="text-blue-600 sm:ml-10" /> },
+    ],
   },
-  {
-    title: "Databases & Storage",
-    items: [{ name: "MySQL", icon: <SiMysql className="text-blue-600" /> }],
-  },
+  // {
+  //   title: "Databases & Storage",
+  //   items:
+  // },
   {
     title: "Tools & Platforms",
     items: [
       { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
       { name: "GitHub", icon: <FaGithub className="text-white -ml-3" /> },
-      { name: "Postman", icon: <SiPostman className="text-orange-500 -ml-2" /> },
+      {
+        name: "Postman",
+        icon: <SiPostman className="text-orange-500 -ml-2" />,
+      },
       { name: "Vercel", icon: <SiVercel className="text-white" /> },
     ],
   },
@@ -86,13 +98,16 @@ const item = {
 
 const Skills = () => {
   return (
-    <section id="Skills" className="py-20 px-[7vw] md:px-[7vw] lg:px-[12vw] bg-[#050414]">
+    <section
+      id="Skills"
+      className="py-20 px-[7vw] md:px-[7vw] lg:px-[12vw] bg-[#050414]"
+    >
       <BackgroundBubbles />
       <motion.div
         className="text-center mb-10"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-bold text-white">SKILLS</h2>
@@ -110,22 +125,24 @@ const Skills = () => {
           <motion.div
             key={category.title}
             variants={item}
-            className="bg-[#0f0e1a] p-6 rounded-xl shadow-md hover:shadow-[#f1bc71]/40 transition-shadow duration-300"
+            className="bg-[#0f0e1a] text-center p-6 rounded-xl shadow-md hover:shadow-[#f1bc71]/40 transition-shadow duration-300"
           >
             <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-[#f1bc71]">
               {category.title}
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {category.items.map((skill) => (
-                <motion.div
-                  key={skill.name}
-                  className="flex items-center gap-2 hover:text-[#f1bc71] transition duration-200"
-                >
-                  <span className="text-xl sm:text-2xl">{skill.icon}</span>
-                  <span className="text-sm sm:text-base">{skill.name}</span>
-                </motion.div>
-              ))}
-            </div>
+            <Tilt >
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {category.items.map((skill) => (
+                  <motion.div
+                    key={skill.name}
+                    className="flex items-center gap-2 hover:text-[#f1bc71] transition duration-200"
+                  >
+                    <span className="text-xl sm:text-2xl">{skill.icon}</span>
+                    <span className="text-sm sm:text-base">{skill.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </Tilt>
           </motion.div>
         ))}
       </motion.div>

@@ -49,7 +49,7 @@ export default {
         },
       },
       animation: {
-        blob: 'blob 15s infinite',
+        blob: 'blob 10s infinite',
         float: "floatUp 30s linear infinite",
         fadeInUp: "fadeInUp 1.5s ease-out both",
         fadeInLeft: "fadeInLeft 1.5s ease-out both",

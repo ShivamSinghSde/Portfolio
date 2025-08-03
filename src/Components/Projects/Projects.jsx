@@ -1,5 +1,5 @@
-import React from "react";
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+
 import { motion } from "framer-motion";
 
 const projects = [
@@ -7,9 +7,9 @@ const projects = [
     title: "Online Book Store",
     description:
       "A full-stack web app with Google login, book uploads, admin verification, and JWT authentication.",
-    imageUrl: "/src/Images/bookstore-preview.jpg",
+    imageUrl: "/src/Images/BookStore.jpeg",
     techStack: ["React", "Spring Boot", "MySQL", "JWT", "TailwindCSS"],
-    link: "#", // update with real link
+    link: "#",
   },
   {
     title: "IoT Smart Ambulance",
@@ -111,3 +111,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+
