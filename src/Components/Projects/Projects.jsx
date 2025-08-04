@@ -10,7 +10,7 @@ const projects = [
       "Hospital Management System is a Java-based console application that manages patients, doctors, and appointments using a MySQL database for data storage.",
     fullDescription:
       "Hospital Management System is a Java-based console application that manages patients, doctors, and appointments using a MySQL database for data storage. It consists of four main classes—Patient, Doctor, Appointment, and HospitalManagementSystem (the driver class). Key functionalities include patient registration, viewing doctor/patient details, booking and viewing appointments. The system offers a simple interface to streamline hospital operations efficiently.",
-    imageUrl: "/src/assets/images/hospitalmgt.png",
+    imageUrl: "./public/images/hospitalmgt.png",
     techStack: ["Java", "MySQL"],
     link: "https://github.com/ShivamSinghSde/Hospital-Management-System.git",
   },
@@ -20,7 +20,7 @@ const projects = [
       "Gesture-Controlled Light System is a Python-based project that uses hand gestures to control a virtual light, adjust screen brightness, and modify image colors in real-time.",
     fullDescription:
       "Gesture-Controlled Light System is a Python-based project that uses hand gestures to control a virtual light, adjust screen brightness, and modify image colors in real-time. It leverages OpenCV, MediaPipe, and NumPy to detect finger counts and map them to specific actions like toggling lights or changing visual settings.",
-    imageUrl: "/src/assets/images/gesturecontrol.png",
+    imageUrl: "./public/images/gesturecontrol.png",
     techStack: ["Python"],
     link: "https://github.com/ShivamSinghSde/Gesture-Control-Light-System.git",
   },
