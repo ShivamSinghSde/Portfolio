@@ -56,10 +56,6 @@ const skills = [
       { name: "MySQL", icon: <SiMysql className="text-blue-600 sm:ml-10" /> },
     ],
   },
-  // {
-  //   title: "Databases & Storage",
-  //   items:
-  // },
   {
     title: "Tools & Platforms",
     items: [

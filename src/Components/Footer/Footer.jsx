@@ -25,7 +25,7 @@ const Footer = () => {
         <h3 className="text-xl font-semibold">Connect with me</h3>
         <div className="flex gap-6 mt-2 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/ShivamSinghSde"
             target="_blank"
             rel="noreferrer"
             className="hover:text-[#f1bc71] transition duration-300"
@@ -33,7 +33,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/shivamsinghsde"
             target="_blank"
             rel="noreferrer"
             className="hover:text-[#f1bc71] transition duration-300"
@@ -41,7 +41,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:shivam.workmeet@gmail.com"
             className="hover:text-[#f1bc71] transition duration-300"
           >
             <FaEnvelope />

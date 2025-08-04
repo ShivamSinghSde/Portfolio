@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -13,18 +14,35 @@ const fadeUp = {
   },
 };
 
+
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  const form = useRef();
+  // eslint-disable-next-line no-unused-vars
+  const [isSent, setIsSent] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Here, replace with your actual backend/form endpoint
-    // Example: using fetch or axios
-    // For demo, just clear and show toast
+    emailjs
+      .sendForm(
+        "service_aty85sh",
+        "template_jh2diz8",
+        form.current,
+        "EcClReD47uAfscI98"
+      )
+      .then(() => {
+        setIsSent(true);
+        form.current.reset();
+      });
     setTimeout(() => {
       toast.success("Message sent successfully!", {
         position: "bottom-right",
@@ -38,7 +56,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="Contact" className="bg-[#050414] text-white px-[7vw] py-20 font-sans">
+    <section
+      id="Contact"
+      className="bg-[#050414] text-white px-[7vw] py-20 font-sans"
+    >
       <ToastContainer />
 
       <motion.div
@@ -52,10 +73,15 @@ const Contact = () => {
           Get in <span className="text-[#f1bc71]">Touch</span>
         </h2>
         <p className="text-gray-400 mb-10">
-          Have a project idea or want to work together? Feel free to drop a message!
+          Have a project idea or want to work together? Feel free to drop a
+          message!
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-black">
+        <form
+          ref={form}
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-5 text-black"
+        >
           <input
             type="text"
             name="name"
