@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
-import BlurBlob from "./BlurBlob";
+import BlurBlob from "../src/animations/BlurBlob";
 
 function App() {
   return (
