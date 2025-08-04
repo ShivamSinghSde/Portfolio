@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* logo */}
 
         <div className="cursor-pointer">
-          <img className="w-10" src="./src/assets/Images/SSLogo.png" alt="" />
+          <img className="w-10" src="./src/assets/images/logo.png" alt="" />
         </div>
 
         {/* Menu */}
