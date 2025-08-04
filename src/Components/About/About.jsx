@@ -69,7 +69,7 @@ const About = () => {
             transitionSpeed={1500}
             perspective={1500}
             scale={1.1}>
-              <img src="/src/Images/photo.jpg" alt="Shivam Singh" className="rounded-full w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(241,188,113,0.6)]" />
+              <img src="/src/assets/Images/photo.jpg" alt="Shivam Singh" className="rounded-full w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(241,188,113,0.6)]" />
             </Tilt>
         </div>
       </div>
