@@ -105,7 +105,7 @@ const Navbar = () => {
         <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className="text-3xl text-[#f1bc71]"
+              className="text-3xl text-[#f1bc71] cursor-pointer"
               onClick={() => setIsOpen(false)}
             />
           ) : (
