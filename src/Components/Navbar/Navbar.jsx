@@ -44,7 +44,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="text-white w-full px-4 flex justify-around items-center">
+      <div className="text-white w-full px-4 flex justify-between items-center">
         {/* logo */}
 
         <div className="cursor-pointer">
