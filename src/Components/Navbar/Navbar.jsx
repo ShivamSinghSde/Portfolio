@@ -118,7 +118,7 @@ const Navbar = () => {
       </div>
       {/*  Mobile view Items */}
       {isOpen && (
-        <div className="fixed top-16 left-1/2 transform -translate-x-1/3 w-3/5 bg-[#050414]/50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
+        <div className="fixed top-16 left-1/2 transform -translate-x-1/3 w-2/5 bg-[#050414]/50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg">
           <ul className="flex flex-col items-center gap-3 py-4 text-gray-300 ">
             {menu.map((item) => (
               <li
