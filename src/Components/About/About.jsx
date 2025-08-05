@@ -46,7 +46,7 @@ const About = () => {
             and continuously improving through hands-on experience.
           </p>
           <a
-            href="https://drive.google.com/file/d/147yK7Cmd7T6Ifdm31seTSVzmteG6OupM/view?usp=drive_link"
+            href="/Shivam_Singh_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-110 hover:shadow-lg"
