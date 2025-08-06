@@ -1,5 +1,3 @@
-import React from "react";
-import ReactTypingEffect from "react-typing-effect";
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 4

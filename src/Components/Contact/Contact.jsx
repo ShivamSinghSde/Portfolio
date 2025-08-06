@@ -14,7 +14,6 @@ const fadeUp = {
   },
 };
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -69,7 +68,7 @@ const Contact = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-4xl font-bold mb-4 animate-fadeInDown">
           Get in <span className="text-[#f1bc71]">Touch</span>
         </h2>
         <p className="text-gray-400 mb-10">

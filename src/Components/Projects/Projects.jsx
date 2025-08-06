@@ -52,7 +52,7 @@ const Projects = () => {
       id="Projects"
       className="px-[7vw] md:px-[7vw] lg:px-[12vw] py-20 bg-[#050414] text-white font-sans"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">
+      <h2 className="text-4xl font-bold text-center mb-12 animate-fadeInDown">
         MY PROJECTS
         <div className="w-56 h-1 bg-[#f1bc71] mx-auto mt-2" />
       </h2>
@@ -99,7 +99,7 @@ const Projects = () => {
             <div className="flex justify-end px-4">
               <button
                 onClick={handleCloseProject}
-                className="text-white text-3xl font-bold hover:text-[#f1bc71]"
+                className="text-white text-3xl font-bold hover:text-[#f1bc71] "
               >
                 &times;
               </button>

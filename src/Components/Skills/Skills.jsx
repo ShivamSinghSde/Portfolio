@@ -106,7 +106,7 @@ const Skills = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold text-white">SKILLS</h2>
+        <h2 className="text-4xl font-bold text-white animate-fadeInDown">SKILLS</h2>
         <div className="w-28 h-1 bg-[#f1bc71] mx-auto mt-2" />
       </motion.div>
 

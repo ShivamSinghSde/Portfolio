@@ -27,6 +27,16 @@ export default {
             transform: "translateY(0)",
           },
         },
+        fadeInDown: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-40px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
         fadeInLeft: {
           "0%": {
             opacity: 0,
@@ -52,6 +62,7 @@ export default {
         blob: 'blob 10s infinite',
         float: "floatUp 30s linear infinite",
         fadeInUp: "fadeInUp 1.5s ease-out both",
+        fadeInDown: "fadeInDown 1.5s ease-out both",
         fadeInLeft: "fadeInLeft 1.5s ease-out both",
         fadeInRight: "fadeInRight 1.5s ease-out both",
 
