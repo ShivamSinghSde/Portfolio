@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
-4
+4;
 
 const About = () => {
   return (
@@ -44,7 +44,7 @@ const About = () => {
             and continuously improving through hands-on experience.
           </p>
           <a
-            href="/Shivam_Singh_Resume.pdf"
+            href="/Portfolio/Shivam_Singh_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-110 hover:shadow-lg"
@@ -62,13 +62,20 @@ const About = () => {
         </div>
         {/* Photo Right side */}
         <div className="md:w-1/2 flex justify-center md:justify-end animate-fadeInLeft">
-            <Tilt className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-[#f1bc71] rounded-full" tiltMaxAngleX={20}
+          <Tilt
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-[#f1bc71] rounded-full"
+            tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             transitionSpeed={1500}
             perspective={1500}
-            scale={1.1}>
-              <img src="/Portfolio/images/photo.jpg" alt="Shivam Singh" className="rounded-full w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(241,188,113,0.6)]" />
-            </Tilt>
+            scale={1.1}
+          >
+            <img
+              src="/Portfolio/images/photo.jpg"
+              alt="Shivam Singh"
+              className="rounded-full w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(241,188,113,0.6)]"
+            />
+          </Tilt>
         </div>
       </div>
     </section>
